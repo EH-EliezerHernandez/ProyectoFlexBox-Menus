@@ -34,3 +34,37 @@ nav ul a {
     text-decoration: none;
     font-size: 1.4rem;
 }
+/**sencillo**/
+/**Mi manera**/
+.sencillo ul li{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+@media screen and (min-width:768px) {
+    .sencillo ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sencillo ul li{
+        margin:unset;
+    }
+}
+/**Manera del Video**/
+/* .sencillo ul{
+    display:flex;
+    flex-direction: column;
+}
+.sencillo ul li{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+@media screen and (min-width:768px) {
+    .sencillo ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sencillo ul li{
+        margin:unset;
+    }
+} */

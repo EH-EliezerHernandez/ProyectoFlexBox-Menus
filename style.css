@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     box-sizing: border-box;
     margin:0;
@@ -33,4 +36,37 @@ nav ul a {
     color: white;
     text-decoration: none;
     font-size: 1.4rem;
+}
+/**Con Iconos**/
+@media screen and (min-width:480px) {
+    .iconos ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .iconos ul li{
+        flex: 0 0 50%;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .iconos ul li{
+        flex: 0 0 25%;
+        /* flex: 1 0 20%; otra alternativa*/
+    }
+    
+}
+.iconos ul li a{
+    display:flex;
+    justify-content: center;
+}
+.iconos .icono{
+    flex: 0 1 2rem;
+}
+.iconos .texto{
+    flex: 1;
+}
+.texto span{
+    display:block;
+    font-size: .8rem;
+    margin-top: .5rem;
 }

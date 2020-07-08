@@ -34,3 +34,29 @@ nav ul a {
     text-decoration: none;
     font-size: 1.4rem;
 }
+/**Menu Redes sociales**/
+#iconos ul{
+    display: flex;
+    justify-content: flex-end;
+}
+#iconos ul li a::before{
+    font-family: "Font Awesome 5 Brands";
+}
+#iconos ul li a[href*='facebook.com']::before{
+    content: "\f39e";
+}
+#iconos ul li a[href*="twitter.com"]::before{
+    content:'\f099';
+}
+#iconos ul li a[href*="youtube.com"]::before{
+    content:"\f431";
+}
+#iconos ul li a[href*="instagram.com"]::before{
+    content:'\f16d';
+}
+#iconos ul li a[href*="pinterest.com"]::before{
+    content:'\f231';
+}
+#iconos ul span{
+    display:none;
+}

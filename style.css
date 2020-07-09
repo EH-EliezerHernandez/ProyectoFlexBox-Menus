@@ -29,6 +29,9 @@ nav ul li {
 nav ul li:hover {
     background-color: #1a2770;
 }
+nav ul li ul li:hover{
+    background-color: #ff5e62
+}
 nav ul a {
     color: white;
     text-decoration: none;
@@ -36,8 +39,58 @@ nav ul a {
 }
 /**DropDown con Redes Sociales*/
 .navegacion-social-dropDown{
-    width: 100%;
     display:flex;
     justify-content:space-between;
     background-color: #3F51B5;
+}
+.navegacion-social-dropDown #sociales span{
+    display:none;
+}
+/**Menu dropDowm**/
+@media screen and (min-width:768px) {
+    #dropDown ul{
+        display: flex;
+    }
+    #dropDown ul{
+        flex: 0 0 25%;
+    }
+    #dropDown ul li{
+        position: relative;
+    }
+    #dropDown ul li ul{
+        display: none;
+    }
+    #dropDown ul li:hover ul{
+        display:block;
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ff5e62;
+    }
+}
+
+/**Menu Sociales**/
+#sociales ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+#sociales ul li a::before{
+    font-family: "Font Awesome 5 Brands";
+}
+#sociales ul li a[href*="facebook"]::before{
+    content: "\f39e";
+}
+#sociales ul li a[href*="twitter"]::before{
+    content:"\f099";
+}
+#sociales ul li a[href*=youtube]::before{
+    content:"\f431";
+}
+#sociales ul li a[href*="instagram"]::before{
+    content:"\f16d";
+}
+#sociales ul li a[href*="pinterest"]::before{
+    content:"\f231";
 }
